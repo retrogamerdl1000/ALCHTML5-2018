@@ -1,49 +1,116 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Robot Adventure</title>
+        <title>Virtual Adventure</title>
     </head>
     <body>
-        <h1>Robot Adventure v1.0</h1>
+        <h1>Virtual Adventure v1.0</h1>
         <p>Made by: Tanner Lundbereg</p>
         <script>
+            // Inventory System
+            var inventory = {
+                money:1000,
+                saber:0,
+                blaster:0,
+                virus:0,
+                meat:0,
+                ammo:0,
+                skeletonkey:0,
+            }
+            
+            var player = {
+                firstname:"",
+                lastname:"",
+                gender:"",
+                age:"",
+            }
+            
+            
+            
             Start();
             
             function Start(){
                 
-                var playerName = prompt("What is your name traveller")
+                
+                var playerName = prompt("What is your name User")
                 
                 alert("Welcome to the virtualnet, " + playerName);
                 
-                var startGame == confirm("are you ready to begin your adventure?");
+                var startGame = confirm("are you ready to begin your adventure?");
                 
                     if(startGame){
+                        City();
                         
                     }
                     else{
-                        alert("Goodbye");
+                        alert("You are not ready, Well then goodbye Signing out");
                     }
             
-            {
-                function Village(){
-                    var village = prompt("You arrive at a small village. There is a blacksmith,inn,stable and several wooden homes").toLowerCase;
+            }
+                function City(){
+                    var City = prompt("You arrive at a Small City. There is a Gear Shop,Rest Home,Car Shop, several Tall buildings, and shady back street (don't go there). There is also a path that leads out of the city to the east and west.").toLowerCase();
                     
-                    switch(village){
-                            cased "blacksmith":
-                                  alert("The blacksmith scowls at you and mumbles something rude! You walk away intimidated.")
-                                break;
-                                case "inn":
-                                     alert("You enter the old weather torn inn. The innkeeper asks what he can do for you?Rent a room. Buy food. Sit by the hearth fire.");
-                                case stable:
-                                     alert("The stable master infroms you that all of the horses have been stolen last night. He asks you for your help?");
-                                break;
-                                default:
-                                    alert("I do not understand " + village)
-                                break;
+                    switch(City){
                             
-                                  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                fgfwwwwsweqqqqq
+                            case "Gear Shop":
+                                  alert("When you walk in. The GearWorker say's that he is sorry and he can't help. He says come back later. You see sabers,armour, and blasters. You walk away willing to return. before you leave the GearWorker says do you want to buy anththng. ")
+                            var Gearshop = propmt ("buy  saber")
+                            if(blacksmith == "buy saber"){
+                                alert("You bought a saber! Congradulations!");
+                                inventory.saber ++;
+                                alert("sabers = "+inventory.saber);
+                                
+                                 var GearShop = propmt ("buy  blaster")
+                            if(blacksmith == "buy blaster"){
+                                alert("You bought a blaster! Congradulations!");
+                                inventory.blaster ++;
+                                alert("basters = "+inventory.blaster);
+                                
+                                 var GearShop = propmt ("buy  armour")
+                            if(blacksmith == "buy saber"){
+                                alert("You bought a sword! Congradulations!");
+                                inventory.saber ++;
+                                alert("sabers = "+inventory.saber);
+                            }
+                            
+                            village();
+                        break;
+                        case "inn":
+                            alert("You enter the old weather torn inn. The innkeeper asks what he can do for you?Rent a room. Buy food. Sit by the hearth fire.");
+                            Village();
+                        break;
+                        case "stable":
+                            alert("The stable master infroms you that all of the horses have been stolen last night. He asks you for your help?");
+                            Village();
+                        break;
+                        case "back street"
+                            alert("Instantly when you walk to the back street you  are shot and killed. What did I say you shoiuldn't have done that end of game refresh Page.")
+                        break;
+                        case "east":
+                            Forest();
+                        break;
+                        case "west" :
+                            Mountains();
+                        default:
+                            alert("I do not understand " + village)
+                                
+                            Village();
+                    
+                }
                 
             }
+                
+            function Forset(){
+                var forestPath = prompt ("You have entered on the forest path which slithers through a forest dense pine trees. There is a Tall pine tree with low branches just off the path. The path continues east or back the village.");
+                
+                
+                if(forestPath == ""){
+                    
+                }
+            }
+                
+            function Mountains(){}
                 
             
             
